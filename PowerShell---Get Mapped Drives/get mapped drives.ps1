@@ -1,0 +1,1 @@
+﻿Get-WmiObject Win32_MappedLogicalDisk -computer (COMPUTER NAME HERE)  | select Name, Providername
