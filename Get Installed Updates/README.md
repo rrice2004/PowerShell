@@ -1,31 +1,32 @@
-# PowerShell---Dirty-Simple-ADUser-Search
-Dirty, but simple PowerShell script to quickly search AD for a user
+# PowerShell---Get Installed Updates
+Dirty, but simple PowerShell script to get installed Windows updates from a computer and output the results to a filterable grid.
 
 ## Usage
-Run the powershell script. Enter the users full name as it's listed in your AD.
-Returns the following informationon the user:
-* Name
-* Last Log on Date
-* Account Enabled
-* Account Locked
-* Is Password Expired
-* Bad Logon Count
+Run the powershell script. Enter the computer name. If the computer is online, it will search for installed updates. If it's not online, you will be advised.
 
-
-```sh
-Enter user to search, or EXIT to quit: john.doe
-
-Friday 08/30/2019 16:38
-
-
-Name            : Doe, John
-LastLogOnDate   : 8/25/2019 2:26:51 PM
-Enabled         : True
-LockedOut       : False
-PasswordExpired : False
-BadLogonCount   : 2
-
-
-
-Enter user to search, or EXIT to quit:
 ```
+Enter Computer name, or EXIT to quit: Computer1
+[ INFO ]:  Getting Installed Updates for Computer1
+[ INFO ]:  Checking if machine is online.
+[ Alert ]: Machine is online...continuing.
+[ INFO ]: See Output Grid for results.
+
+Enter Computer name, or EXIT to quit: 
+
+
+
+Enter Computer name, or EXIT to quit:  Computer2
+
+[ INFO ]:  Getting Installed Updates for  Computer2
+[ INFO ]:  Checking if machine is online.
+[ ERROR ]:  Computer2 is not online.
+
+Enter Computer name, or EXIT to quit: 
+
+```
+
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
