@@ -2,7 +2,7 @@
 
 
 Dirty, but simple PowerShell script to search through text files for a keyword.
-* Currently searches text files only. 
+* Currently searches text (.txt) files only. 
 * Files being searched need to be in the same folder or directory. 
 * Currently not searhcing sub-directories within a folder.
 
