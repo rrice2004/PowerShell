@@ -1,31 +1,18 @@
-# PowerShell---Dirty-Simple-ADUser-Search
-Dirty, but simple PowerShell script to quickly search AD for a user
+# PowerShell---Check Remote File Patch
+Dirty, but simple PowerShell script to check if a remote patch exists on a computer and save the results in a csv file.
 
 ## Usage
-Run the powershell script. Enter the users full name as it's listed in your AD.
-Returns the following informationon the user:
-* Name
-* Last Log on Date
-* Account Enabled
-* Account Locked
-* Is Password Expired
-* Bad Logon Count
+Add the computer(s) to the computers.txt file and save to you C:\Temp folder.
+Locate the program folder you're searching for and modify the script to lookin both the Program Files (x86) and Program Files directory.
+Run the powershell script. 
+Once complete, check the temp folder for the csv report.
 
 
 ```sh
-Enter user to search, or EXIT to quit: john.doe
+C:\Scripts\Check File Path Remotley.ps1
+Computer1 Adobe Directory present x86
+Computer2 Adobe Directory present x86
+Computer3 Adobe Unknown
+Computer4 Adobe Directory present
 
-Friday 08/30/2019 16:38
-
-
-Name            : Doe, John
-LastLogOnDate   : 8/25/2019 2:26:51 PM
-Enabled         : True
-LockedOut       : False
-PasswordExpired : False
-BadLogonCount   : 2
-
-
-
-Enter user to search, or EXIT to quit:
 ```
