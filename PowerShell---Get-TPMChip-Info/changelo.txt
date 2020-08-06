@@ -1,0 +1,3 @@
+08/06/2020
+  Added a new line to prevent machines not online from erroring into the powershell window.
+  Added a customer object to store the data for exporting after something broke the function of the script.
